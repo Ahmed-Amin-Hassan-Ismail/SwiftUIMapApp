@@ -18,3 +18,11 @@ struct Location {
     let link: String
     
 }
+
+extension Location: Identifiable {
+    
+    var id: String {
+        
+        UUID().uuidString
+    }
+}
