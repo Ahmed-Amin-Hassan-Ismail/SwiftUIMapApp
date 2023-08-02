@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct LocationView: View {
     
@@ -16,13 +17,10 @@ struct LocationView: View {
     // MARK: - Body
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text(viewModel.locations[1].cityName)
+        ZStack {
+            Map(coordinateRegion: $viewModel.mapRegion)
+                .ignoresSafeArea(.all)
         }
-        .padding()
     }
 }
 
