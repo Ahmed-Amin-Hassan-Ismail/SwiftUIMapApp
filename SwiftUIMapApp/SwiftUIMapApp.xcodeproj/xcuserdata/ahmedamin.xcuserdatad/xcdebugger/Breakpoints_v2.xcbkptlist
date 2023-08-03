@@ -3,4 +3,70 @@
    uuid = "2BBC6B9A-D1AC-4903-871E-6CBA5233EC40"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B839CB9-59B4-4930-9413-C8FB21220A79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIMapApp/ViewModel/LocationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "addSubscriber()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0B839CB9-59B4-4930-9413-C8FB21220A79 - 2923f4efe28fbc15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIMapApp.LocationViewModel.setupLocations() -&gt; ()"
+                  moduleName = "SwiftUIMapApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedamin/Desktop/My%20Projects/SwiftUIMapApp/SwiftUIMapApp/SwiftUIMapApp/ViewModel/LocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "856">
+               </Location>
+               <Location
+                  uuid = "0B839CB9-59B4-4930-9413-C8FB21220A79 - f65105542b89ac4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;SwiftUIMapApp.Location&gt;) -&gt; () in SwiftUIMapApp.LocationViewModel.addSubscriber() -&gt; ()"
+                  moduleName = "SwiftUIMapApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedamin/Desktop/My%20Projects/SwiftUIMapApp/SwiftUIMapApp/SwiftUIMapApp/ViewModel/LocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A083BBAB-BDF1-47CF-BF1F-7ED6E7B98E4F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIMapApp/ViewModel/LocationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "addSubscriber()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

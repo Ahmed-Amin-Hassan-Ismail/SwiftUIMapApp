@@ -20,6 +20,7 @@ struct LocationView: View {
         ZStack {
             
             mapView
+                .ignoresSafeArea(.all)
             
             VStack {
                 headerView
@@ -39,8 +40,19 @@ extension LocationView {
     
     private var mapView: some View {
         withAnimation(.easeInOut) {
-            Map(coordinateRegion: $viewModel.mapRegion)
-                .ignoresSafeArea(.all)
+            Map(coordinateRegion: $viewModel.mapRegion,
+                annotationItems: viewModel.locations) { location in
+                MapAnnotation(coordinate: location.coordinates) {
+                    LocationMapAnnotationView()
+                        .scaleEffect( (viewModel.currentLocation == location) ? 1 : 0.7 )
+                        .shadow(radius: 10)
+                        .onTapGesture {
+                            withAnimation(.easeInOut) {
+                                viewModel.showNextLocation(location: location)
+                            }
+                        }
+                }
+            }
         }
     }
     
@@ -78,7 +90,7 @@ extension LocationView {
     
     private var headerCityName: some View {
         
-        lazy var headerName = "\(viewModel.currentLocation?.name ?? ""), \(viewModel.currentLocation?.cityName ?? "")"
+        lazy var headerName = "\(viewModel.currentLocation.name), \(viewModel.currentLocation.cityName)"
         
         return  HStack(spacing: 20) {
             
@@ -98,9 +110,7 @@ extension LocationView {
     
     private var tileView : some View {
         ZStack {
-            if let location = viewModel.currentLocation {                
-                LocationPreviewView(location: location)
-            }
+            LocationPreviewView(location: viewModel.currentLocation)
         }
     }
 }

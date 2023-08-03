@@ -15,7 +15,7 @@ final class LocationViewModel: ObservableObject {
     // MARK: - Properties
     
     @Published var locations = [Location]()
-    @Published var currentLocation: Location?
+    @Published var currentLocation: Location!
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     @Published var showLocationListView: Bool = false
     
