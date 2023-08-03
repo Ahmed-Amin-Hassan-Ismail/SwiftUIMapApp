@@ -15,6 +15,7 @@
 		AC3A24372A7AF9450077263A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A24362A7AF9450077263A /* Location.swift */; };
 		AC3A243A2A7AFA730077263A /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A24392A7AFA730077263A /* LocationViewModel.swift */; };
 		AC3A243C2A7AFB440077263A /* PreviewProvider + EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A243B2A7AFB440077263A /* PreviewProvider + EXT.swift */; };
+		ACEF10DF2A7B1042001BABCB /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF10DE2A7B1042001BABCB /* LocationListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AC3A24362A7AF9450077263A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AC3A24392A7AFA730077263A /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		AC3A243B2A7AFB440077263A /* PreviewProvider + EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider + EXT.swift"; sourceTree = "<group>"; };
+		ACEF10DE2A7B1042001BABCB /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				AC3A24222A7AF6730077263A /* LocationView.swift */,
+				ACEF10DE2A7B1042001BABCB /* LocationListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				AC3A243C2A7AFB440077263A /* PreviewProvider + EXT.swift in Sources */,
 				AC3A24212A7AF6730077263A /* SwiftUIMapAppApp.swift in Sources */,
 				AC3A24372A7AF9450077263A /* Location.swift in Sources */,
+				ACEF10DF2A7B1042001BABCB /* LocationListView.swift in Sources */,
 				AC3A243A2A7AFA730077263A /* LocationViewModel.swift in Sources */,
 				AC3A24322A7AF8CB0077263A /* LocationsDataService.swift in Sources */,
 			);

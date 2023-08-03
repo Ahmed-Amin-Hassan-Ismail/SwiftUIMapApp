@@ -17,6 +17,7 @@ final class LocationViewModel: ObservableObject {
     @Published var locations = [Location]()
     @Published var currentLocation: Location?
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
+    @Published var showLocationListView: Bool = false
     
     private let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     private var cancellables = Set<AnyCancellable>()
