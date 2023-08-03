@@ -29,7 +29,35 @@ final class LocationViewModel: ObservableObject {
         setupLocations()
     }
     
-    // MARK: - Methods
+    // MARK: - Public Methods
+    
+    func showNextLocation(location: Location) {
+        
+        currentLocation = location
+        showLocationListView = false
+    }
+    
+    func didTapOnNextLocation() {
+        
+        guard let index = locations.firstIndex(where: { $0 == currentLocation }) else { return }
+        
+        let nextIndex = index + 1
+        
+        guard locations.indices.contains(nextIndex) else {
+            
+            let firstLocation = locations.first!
+            showNextLocation(location: firstLocation)
+            
+            return
+        }
+        
+        let nextLocation = locations[nextIndex]
+        
+        showNextLocation(location: nextLocation)
+        
+    }
+    
+    // MARK: - Private Methods
     
     private func setupLocations() {
         

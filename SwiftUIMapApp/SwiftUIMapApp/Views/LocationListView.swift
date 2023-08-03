@@ -20,14 +20,14 @@ struct LocationListView: View {
                 setupListRow(with: location)
                     .onTapGesture {
                         withAnimation(.easeInOut) {
-                            viewModel.currentLocation = location
-                            viewModel.showLocationListView = false
+                            viewModel.showNextLocation(location: location)
                         }
                     }
             }
             .listRowBackground(Color.clear)
         }
         .listStyle(.plain)
+        .clipped()
     }
 }
 

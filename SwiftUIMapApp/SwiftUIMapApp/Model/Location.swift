@@ -26,3 +26,15 @@ extension Location: Identifiable {
         UUID().uuidString
     }
 }
+
+
+extension Location: Equatable {
+    
+    static func == (lhs: Location, rhs: Location) -> Bool {
+        
+        lhs.name == rhs.name && lhs.cityName == rhs.cityName
+        
+    }
+    
+    
+}

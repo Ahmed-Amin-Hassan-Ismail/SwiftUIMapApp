@@ -25,9 +25,9 @@ struct LocationView: View {
                 headerView
                 
                 Spacer()
+                
+                tileView
             }
-            
-            
         }
     }
 }
@@ -52,7 +52,6 @@ extension LocationView {
             
             if viewModel.showLocationListView {
                 LocationListView()
-                    .environmentObject(viewModel)
             }
         }
         .background(Color.white)
@@ -95,6 +94,14 @@ extension LocationView {
         }
         .frame(maxWidth: .infinity)
         .foregroundColor(.primary)
+    }
+    
+    private var tileView : some View {
+        ZStack {
+            if let location = viewModel.currentLocation {                
+                LocationPreviewView(location: location)
+            }
+        }
     }
 }
 
